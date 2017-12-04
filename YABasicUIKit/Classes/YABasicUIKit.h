@@ -11,5 +11,6 @@
 #pragma mark - UIView
 #import "UIView+YAFrame.h"
 #import "UIView+YAGestureRecognizer.h"
+#import "UIView+YACorner.h"
 
 #endif /* YABasicUIKit_h */

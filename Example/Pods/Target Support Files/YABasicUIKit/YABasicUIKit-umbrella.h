@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIView+YACorner.h"
 #import "UIView+YAFrame.h"
 #import "UIView+YAGestureRecognizer.h"
 #import "YABasicUIKit.h"

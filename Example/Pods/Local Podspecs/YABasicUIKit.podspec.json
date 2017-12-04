@@ -1,6 +1,6 @@
 {
   "name": "YABasicUIKit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "YABasicUIKit",
   "description": "YABasicUIKit对常用UI控件库的封装",
   "homepage": "https://github.com/oneAlon/YABasicUIKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/oneAlon/YABasicUIKit.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"

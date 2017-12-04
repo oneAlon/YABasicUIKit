@@ -1,5 +1,5 @@
 PODS:
-  - YABasicUIKit (0.1.0)
+  - YABasicUIKit (0.1.1)
 
 DEPENDENCIES:
   - YABasicUIKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  YABasicUIKit: e7ca12bb35e13cacbf46ce67ed78978d98b15a9f
+  YABasicUIKit: 088130eced543a6df3288eca01ec8df66a75e9c1
 
 PODFILE CHECKSUM: 20ada69181daa6bac0055a42fa49825828509313
 
