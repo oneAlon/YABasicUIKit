@@ -1,9 +1,9 @@
 {
   "name": "YABasicUIKit",
   "version": "0.1.0",
-  "summary": "A short description of YABasicUIKit.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/OneAlon/YABasicUIKit",
+  "summary": "YABasicUIKit",
+  "description": "YABasicUIKit对常用UI控件库的封装",
+  "homepage": "https://github.com/oneAlon/YABasicUIKit",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,7 +12,7 @@
     "OneAlon": "wangyalong24@126.com"
   },
   "source": {
-    "git": "https://github.com/OneAlon/YABasicUIKit.git",
+    "git": "https://github.com/oneAlon/YABasicUIKit.git",
     "tag": "0.1.0"
   },
   "platforms": {

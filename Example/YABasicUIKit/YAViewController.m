@@ -7,8 +7,6 @@
 //
 
 #import "YAViewController.h"
-#import <YABasicUIKit/YABasicUIKit-umbrella.h>
-
 
 @interface YAViewController ()
 

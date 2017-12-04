@@ -8,6 +8,5 @@
 #ifndef YABasicUIKit_h
 #define YABasicUIKit_h
 
-#define ABC 123
 
 #endif /* YABasicUIKit_h */
