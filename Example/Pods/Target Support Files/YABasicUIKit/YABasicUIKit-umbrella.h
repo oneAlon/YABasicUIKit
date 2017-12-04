@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "UIView+Frame.h"
+#import "YABasicUIKit.h"
 
 FOUNDATION_EXPORT double YABasicUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char YABasicUIKitVersionString[];
