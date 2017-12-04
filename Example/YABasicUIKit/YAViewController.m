@@ -7,11 +7,16 @@
 //
 
 #import "YAViewController.h"
+#import "YACellItem.h"
+#import "YAGestureRecognizerVC.h"
 
-#import <YABasicUIKit/YABasicUIKit.h>
+#define cell_identifier @"YAViewControllerTableView"
 
-@interface YAViewController ()
 
+@interface YAViewController ()<UITableViewDelegate,UITableViewDataSource>
+{
+    NSMutableArray *_itemArray;
+}
 @end
 
 @implementation YAViewController
@@ -20,25 +25,41 @@
 {
     [super viewDidLoad];
     
-    [self.view ya_whenSingleTapped:^(UIGestureRecognizer *gestureRecognizer) {
-        NSLog(@"单击");
-    }];
     
-    [self.view ya_whenDoubleTapped:^(UIGestureRecognizer *gestureRecognizer) {
-        NSLog(@"双击");
-    }];
+    UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cell_identifier];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    [self.view addSubview:tableView];
+    
+    
+    _itemArray = [NSMutableArray array];
+    [_itemArray addObject:[[YACellItem alloc]initWithTitle:@"UIView+YAGestureRecognizer" vcClass:[YAGestureRecognizerVC class]]];
 
-    [self.view ya_whenLongPressed:^(UIGestureRecognizer *gestureRecognizer) {
-        NSLog(@"长按");
-    }];
-    
-    UIView *redView = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
-    [self.view addSubview:redView];
-    redView.backgroundColor = [UIColor redColor];
-//    [redView ya_setCornerRadii:CGSizeMake(10, 10) forRoundingCorners1:UIRectCornerTopLeft, UIRectCornerTopRight, UIRectCornerBottomLeft, nil];
-    [redView ya_setCornerRadii:CGSizeMake(50, 50) forRoundingCorners1:UIRectCornerBottomLeft, nil];
-    
 }
+
+
+#pragma mark - tableview delegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _itemArray.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cell_identifier];
+    YACellItem *item = [_itemArray objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = item.title;
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    YACellItem *item = [_itemArray objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:[item.vcClass new] animated:YES];
+}
+
 
 
 @end

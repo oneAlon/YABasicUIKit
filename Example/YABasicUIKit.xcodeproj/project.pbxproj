@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		974701D91B0BBA9B723A0D76 /* Pods_YABasicUIKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9B39082B77108A620C4038 /* Pods_YABasicUIKit_Tests.framework */; };
+		DE4821871FD5522D001342DC /* YACellItem.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4821861FD5522D001342DC /* YACellItem.m */; };
+		DE48218A1FD5534E001342DC /* YAGestureRecognizerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DE4821891FD5534E001342DC /* YAGestureRecognizerVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,10 @@
 		8C1A84A518915972F1AA0E5D /* Pods_YABasicUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YABasicUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9528EB8D87912885282A220 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CB9B39082B77108A620C4038 /* Pods_YABasicUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YABasicUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE4821851FD5522D001342DC /* YACellItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YACellItem.h; sourceTree = "<group>"; };
+		DE4821861FD5522D001342DC /* YACellItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YACellItem.m; sourceTree = "<group>"; };
+		DE4821881FD5534E001342DC /* YAGestureRecognizerVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAGestureRecognizerVC.h; sourceTree = "<group>"; };
+		DE4821891FD5534E001342DC /* YAGestureRecognizerVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAGestureRecognizerVC.m; sourceTree = "<group>"; };
 		E8FC5675C0FBD21D59CBFE91 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,6 +143,10 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* YAViewController.h */,
 				6003F5A6195388D20070C39A /* YAViewController.m */,
+				DE4821881FD5534E001342DC /* YAGestureRecognizerVC.h */,
+				DE4821891FD5534E001342DC /* YAGestureRecognizerVC.m */,
+				DE4821851FD5522D001342DC /* YACellItem.h */,
+				DE4821861FD5522D001342DC /* YACellItem.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -406,8 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE4821871FD5522D001342DC /* YACellItem.m in Sources */,
 				6003F59E195388D20070C39A /* YAAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YAViewController.m in Sources */,
+				DE48218A1FD5534E001342DC /* YAGestureRecognizerVC.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
