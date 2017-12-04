@@ -10,7 +10,8 @@
 #endif
 #endif
 
-#import "UIView+Frame.h"
+#import "UIView+YAFrame.h"
+#import "UIView+YAGestureRecognizer.h"
 #import "YABasicUIKit.h"
 
 FOUNDATION_EXPORT double YABasicUIKitVersionNumber;

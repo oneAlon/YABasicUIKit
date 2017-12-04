@@ -19,15 +19,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.view.backgroundColor = [UIColor redColor];
     
+    [self.view ya_whenSingleTapped:^(UIGestureRecognizer *gestureRecognizer) {
+        NSLog(@"单击");
+    }];
     
+    [self.view ya_whenDoubleTapped:^(UIGestureRecognizer *gestureRecognizer) {
+        NSLog(@"双击");
+    }];
+
+    [self.view ya_whenLongPressed:^(UIGestureRecognizer *gestureRecognizer) {
+        NSLog(@"长按");
+    }];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

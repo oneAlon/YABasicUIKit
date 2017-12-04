@@ -14,20 +14,20 @@ typedef void(^YAGestureRecognizerActionBlock)(UIGestureRecognizer *gestureRecogn
 /**
  移除手势
  */
-- (void)xnb_removeAllGestures;
+- (void)ya_removeAllGestures;
 
 /**
- 点击手势
+ 单击手势
  */
-- (void)xnb_whenSingleTapped:(YAGestureRecognizerActionBlock)block;
+- (void)ya_whenSingleTapped:(YAGestureRecognizerActionBlock)block;
 
 /**
  双击手势
  */
-- (void)xnb_whenDoubleTapped:(YAGestureRecognizerActionBlock)block;
+- (void)ya_whenDoubleTapped:(YAGestureRecognizerActionBlock)block;
 
 /**
  长按手势
  */
-- (void)xnb_whenLongPressed:(YAGestureRecognizerActionBlock)block;
+- (void)ya_whenLongPressed:(YAGestureRecognizerActionBlock)block;
 @end
