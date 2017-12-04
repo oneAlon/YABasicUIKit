@@ -1,13 +1,13 @@
 //
-//  UIView+Frame.h
-//  Pods-YABasicUIKit_Example
+//  UIView+YAFrame.h
+//  YABasicUIKit
 //
 //  Created by OneAlon on 2017/12/4.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Frame)
+@interface UIView (YAFrame)
 // x y
 @property (nonatomic, assign) CGFloat x;
 @property (nonatomic, assign) CGFloat y;

@@ -1,13 +1,13 @@
 //
-//  UIView+Frame.m
-//  Pods-YABasicUIKit_Example
+//  UIView+YAFrame.m
+//  YABasicUIKit
 //
 //  Created by OneAlon on 2017/12/4.
 //
 
-#import "UIView+Frame.h"
+#import "UIView+YAFrame.h"
 
-@implementation UIView (Frame)
+@implementation UIView (YAFrame)
 - (void)setX:(CGFloat)x
 {
     CGRect frame = self.frame;

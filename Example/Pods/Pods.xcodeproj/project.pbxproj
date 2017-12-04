@@ -10,12 +10,14 @@
 		211A17B815A790991AF296799412E7D1 /* Pods-YABasicUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC6C629941E73C11DCD58A71EFEC437 /* Pods-YABasicUIKit_Example-dummy.m */; };
 		2F55CAC845B277B4C1D1071AB8520D97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		365DD0062CC098AB6E3E08002F355B27 /* Pods-YABasicUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C27B334219C4ECAFD92FA064B8EAFE3 /* Pods-YABasicUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50929F19361E49C91E184BC033979FD3 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E055907A53ADB16892B230D7D0B76CF /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		501959801FD51B9F00158364 /* UIView+YAFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 5019597E1FD51B9F00158364 /* UIView+YAFrame.h */; };
+		501959811FD51B9F00158364 /* UIView+YAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 5019597F1FD51B9F00158364 /* UIView+YAFrame.m */; };
+		501959851FD51BDF00158364 /* UIView+YAGestureRecognizer.h in Headers */ = {isa = PBXBuildFile; fileRef = 501959831FD51BDF00158364 /* UIView+YAGestureRecognizer.h */; };
+		501959861FD51BDF00158364 /* UIView+YAGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 501959841FD51BDF00158364 /* UIView+YAGestureRecognizer.m */; };
 		7C39ADD9004FC3B8498A98CD2093B6AC /* Pods-YABasicUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 099162F8EA6A6475610AEFBC3708939A /* Pods-YABasicUIKit_Tests-dummy.m */; };
 		A5F34655DF8FA1C30FF5348A92F44804 /* YABasicUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 46FFD5438CB86F9040640C4573D81D8A /* YABasicUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD7F3B0FD24AF7911F615A6B9B586D3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		AF58B56C298209DFDAD0156675D49AC8 /* YABasicUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F09338CBD13042C10E8F1AB887245096 /* YABasicUIKit-dummy.m */; };
-		CB0FA73296DB22C705F6550097656A7B /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 858746CAC283F0FD0A222820DCF5809E /* UIView+Frame.m */; };
 		ED720BD9F9B620F36D40BCCF1FBDF068 /* YABasicUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC40DBD0935048B27A1AF1A30F9CDB25 /* YABasicUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F82E6CC051AC63C26AF6DF178B911A82 /* Pods-YABasicUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 976AD78C42D4EE74564D5856C6916C91 /* Pods-YABasicUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FB7CDAD58ACB5310D1FD96C8BAE18314 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -35,7 +37,6 @@
 		0523DF87C2ADD15012E30241C2A71F6C /* Pods-YABasicUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YABasicUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		069316B1D65730F11AD6288E1F0E63AA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		099162F8EA6A6475610AEFBC3708939A /* Pods-YABasicUIKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YABasicUIKit_Tests-dummy.m"; sourceTree = "<group>"; };
-		0E055907A53ADB16892B230D7D0B76CF /* UIView+Frame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		241192ABCB314FB1E4355C12F7466AB3 /* YABasicUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YABasicUIKit-prefix.pch"; sourceTree = "<group>"; };
 		3D3F5A6F7F063E0C2695F550D9BF019D /* Pods-YABasicUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YABasicUIKit_Example.modulemap"; sourceTree = "<group>"; };
 		3E1551D54F8F83103A3C58585310CC9B /* Pods-YABasicUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YABasicUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,13 +46,16 @@
 		4AB6D54D48A36ACB306273E66615DD6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C27B334219C4ECAFD92FA064B8EAFE3 /* Pods-YABasicUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YABasicUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4E8EA5B0F305EA9C087B769503B98796 /* Pods_YABasicUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YABasicUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5019597E1FD51B9F00158364 /* UIView+YAFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YAFrame.h"; sourceTree = "<group>"; };
+		5019597F1FD51B9F00158364 /* UIView+YAFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YAFrame.m"; sourceTree = "<group>"; };
+		501959831FD51BDF00158364 /* UIView+YAGestureRecognizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+YAGestureRecognizer.h"; sourceTree = "<group>"; };
+		501959841FD51BDF00158364 /* UIView+YAGestureRecognizer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+YAGestureRecognizer.m"; sourceTree = "<group>"; };
 		5EF8AA7E25970A1822713DD336412365 /* Pods_YABasicUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YABasicUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		648A46AAEED64BEABBE520AE904A780E /* Pods-YABasicUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YABasicUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6FC6C629941E73C11DCD58A71EFEC437 /* Pods-YABasicUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YABasicUIKit_Example-dummy.m"; sourceTree = "<group>"; };
 		756F05593E105C3F36642353D9E769B8 /* Pods-YABasicUIKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YABasicUIKit_Tests.modulemap"; sourceTree = "<group>"; };
 		7912AA764AECA5B7CFBE1CD4157D958D /* Pods-YABasicUIKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YABasicUIKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		858746CAC283F0FD0A222820DCF5809E /* UIView+Frame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
 		9265B227BC73FEB5F32FEFE09F2A72D0 /* YABasicUIKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YABasicUIKit.modulemap; sourceTree = "<group>"; };
 		927197B7EC0755DF3835A2D11F287BA5 /* Pods-YABasicUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YABasicUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -99,8 +103,10 @@
 		1956871A071CB609E750695511FC9EC2 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				0E055907A53ADB16892B230D7D0B76CF /* UIView+Frame.h */,
-				858746CAC283F0FD0A222820DCF5809E /* UIView+Frame.m */,
+				5019597E1FD51B9F00158364 /* UIView+YAFrame.h */,
+				5019597F1FD51B9F00158364 /* UIView+YAFrame.m */,
+				501959831FD51BDF00158364 /* UIView+YAGestureRecognizer.h */,
+				501959841FD51BDF00158364 /* UIView+YAGestureRecognizer.m */,
 			);
 			name = UIView;
 			path = YABasicUIKit/Classes/UIView;
@@ -158,8 +164,8 @@
 			isa = PBXGroup;
 			children = (
 				46FFD5438CB86F9040640C4573D81D8A /* YABasicUIKit.h */,
-				1956871A071CB609E750695511FC9EC2 /* UIView */,
 				C3325ED9F8E3F323190754D4EC77DC66 /* Support Files */,
+				1956871A071CB609E750695511FC9EC2 /* UIView */,
 			);
 			name = YABasicUIKit;
 			path = ../..;
@@ -236,9 +242,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50929F19361E49C91E184BC033979FD3 /* UIView+Frame.h in Headers */,
+				501959801FD51B9F00158364 /* UIView+YAFrame.h in Headers */,
 				ED720BD9F9B620F36D40BCCF1FBDF068 /* YABasicUIKit-umbrella.h in Headers */,
 				A5F34655DF8FA1C30FF5348A92F44804 /* YABasicUIKit.h in Headers */,
+				501959851FD51BDF00158364 /* UIView+YAGestureRecognizer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB0FA73296DB22C705F6550097656A7B /* UIView+Frame.m in Sources */,
+				501959861FD51BDF00158364 /* UIView+YAGestureRecognizer.m in Sources */,
+				501959811FD51B9F00158364 /* UIView+YAFrame.m in Sources */,
 				AF58B56C298209DFDAD0156675D49AC8 /* YABasicUIKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
