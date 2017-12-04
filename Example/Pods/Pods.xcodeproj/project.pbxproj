@@ -11,8 +11,7 @@
 		211A17B815A790991AF296799412E7D1 /* Pods-YABasicUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FC6C629941E73C11DCD58A71EFEC437 /* Pods-YABasicUIKit_Example-dummy.m */; };
 		2F55CAC845B277B4C1D1071AB8520D97 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		365DD0062CC098AB6E3E08002F355B27 /* Pods-YABasicUIKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C27B334219C4ECAFD92FA064B8EAFE3 /* Pods-YABasicUIKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		501959561FD4F68200158364 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = 501959541FD4F68200158364 /* UIView+Frame.h */; };
-		501959571FD4F68200158364 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 501959551FD4F68200158364 /* UIView+Frame.m */; };
+		501959671FD4F90700158364 /* YABasicUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 5019595E1FD4F77300158364 /* YABasicUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7C39ADD9004FC3B8498A98CD2093B6AC /* Pods-YABasicUIKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 099162F8EA6A6475610AEFBC3708939A /* Pods-YABasicUIKit_Tests-dummy.m */; };
 		88C186CD6849F2A626700FBEAE300479 /* YABasicUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D402F3070043669C181E461707150298 /* YABasicUIKit-dummy.m */; };
 		AD7F3B0FD24AF7911F615A6B9B586D3F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -41,8 +40,7 @@
 		48A6FB97AB83C8A04D2C4A3DB2C79716 /* Pods-YABasicUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YABasicUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4C27B334219C4ECAFD92FA064B8EAFE3 /* Pods-YABasicUIKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-YABasicUIKit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4E8EA5B0F305EA9C087B769503B98796 /* Pods_YABasicUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YABasicUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		501959541FD4F68200158364 /* UIView+Frame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		501959551FD4F68200158364 /* UIView+Frame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		5019595E1FD4F77300158364 /* YABasicUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YABasicUIKit.h; sourceTree = "<group>"; };
 		5B80F6C0791E0E917B579B5C18BA1A0D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EF8AA7E25970A1822713DD336412365 /* Pods_YABasicUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YABasicUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		648A46AAEED64BEABBE520AE904A780E /* Pods-YABasicUIKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YABasicUIKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -106,8 +104,6 @@
 		501959531FD4F66700158364 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
-				501959541FD4F68200158364 /* UIView+Frame.h */,
-				501959551FD4F68200158364 /* UIView+Frame.m */,
 			);
 			name = UIView;
 			path = YABasicUIKit/Classes/UIView;
@@ -181,6 +177,7 @@
 		CE12676F3A81842EDC7AFEAAFBC40C27 /* YABasicUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				5019595E1FD4F77300158364 /* YABasicUIKit.h */,
 				501959531FD4F66700158364 /* UIView */,
 				E554E5987A74B9838AA2CA4521543B4B /* Support Files */,
 			);
@@ -225,8 +222,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501959671FD4F90700158364 /* YABasicUIKit.h in Headers */,
 				0D930951E8F8513907382896CA0B1A27 /* YABasicUIKit-umbrella.h in Headers */,
-				501959561FD4F68200158364 /* UIView+Frame.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +331,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				501959571FD4F68200158364 /* UIView+Frame.m in Sources */,
 				88C186CD6849F2A626700FBEAE300479 /* YABasicUIKit-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
