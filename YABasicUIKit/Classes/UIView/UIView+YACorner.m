@@ -33,4 +33,24 @@
     maskLayer.path = maskPath.CGPath;
     self.layer.mask = maskLayer;
 }
+
+
+- (void)ya_addBorderWithBorderColor:(UIColor *)borderColor andBorderWidth:(CGFloat)width {
+    
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.borderWidth = width;
+}
+
+
+- (void)ya_addCornerRadius:(CGFloat)cornerRadius
+         andAddBorderWithBorderColor:(UIColor *)borderColor
+                      andBorderWidth:(CGFloat)width {
+    
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = YES;
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.borderWidth = width;
+}
+
+
 @end
