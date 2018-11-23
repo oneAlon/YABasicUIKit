@@ -41,7 +41,7 @@
  
  @param fontSize 文字字号
  */
-+ (UIFont *)ya_PingFangSCMediumOfSize:(CGFloat)fontSize
++ (UIFont *)ya_pingFangSCMediumOfSize:(CGFloat)fontSize
 {
     return [UIFont fontWithName:@"PingFangSC-Medium" size:fontSize];
 }
@@ -50,7 +50,7 @@
  
  @param fontSize 文字字号
  */
-+ (UIFont *)ya_PingFangSCRegularOfSize:(CGFloat)fontSize
++ (UIFont *)ya_pingFangSCRegularOfSize:(CGFloat)fontSize
 {
     return [UIFont fontWithName:@"PingFangSC-Regular" size:fontSize];
 }

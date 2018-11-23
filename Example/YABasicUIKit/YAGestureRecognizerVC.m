@@ -36,6 +36,7 @@
     //    [redView ya_setCornerRadii:CGSizeMake(10, 10) forRoundingCorners1:UIRectCornerTopLeft, UIRectCornerTopRight, UIRectCornerBottomLeft, nil];
     [redView ya_setCornerRadii:CGSizeMake(50, 50) forRoundingCorners1:UIRectCornerBottomLeft, nil];
     
+    
 }
 
 - (void)didReceiveMemoryWarning {

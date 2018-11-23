@@ -35,13 +35,13 @@ NS_ASSUME_NONNULL_BEGIN
  @param fontSize 文字字号
  */
 
-+ (UIFont *)ya_PingFangSCMediumOfSize:(CGFloat)fontSize;
++ (UIFont *)ya_pingFangSCMediumOfSize:(CGFloat)fontSize;
 /**
  PingFangSC-Regular
  
  @param fontSize 文字字号
  */
-+ (UIFont *)ya_PingFangSCRegularOfSize:(CGFloat)fontSize;
++ (UIFont *)ya_pingFangSCRegularOfSize:(CGFloat)fontSize;
 @end
 
 NS_ASSUME_NONNULL_END

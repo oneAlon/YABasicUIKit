@@ -11,11 +11,14 @@
 #endif
 
 #import "UIFont+YAFontType.h"
+#import "UIImage+YACreate.h"
+#import "UIImage+YARotate.h"
 #import "UIView+YACorner.h"
 #import "UIView+YAFrame.h"
 #import "UIView+YAGestureRecognizer.h"
 #import "YABasicUIKit.h"
-
+#import "YACommonMethods.h"
+#import "YAMacro.h"
 
 FOUNDATION_EXPORT double YABasicUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char YABasicUIKitVersionString[];

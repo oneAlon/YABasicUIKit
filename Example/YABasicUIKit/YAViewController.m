@@ -36,8 +36,7 @@
     _itemArray = [NSMutableArray array];
     [_itemArray addObject:[[YACellItem alloc]initWithTitle:@"UIView+YAGestureRecognizer" vcClass:[YAGestureRecognizerVC class]]];
     
-    UILabel *label  = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, 30)];
-//    label.font = [UIFont ]
+    
 
 }
 

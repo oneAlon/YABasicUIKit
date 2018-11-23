@@ -8,6 +8,7 @@
 #import "UIView+YACorner.h"
 
 @implementation UIView (YACorner)
+
 - (void)ya_setCornerRadii:(CGSize)cornerRadii forRoundingCorners:(UIRectCorner)corners
 {
     [self ya_setCornerRadii:cornerRadii forRoundingCorners1:corners, nil];
