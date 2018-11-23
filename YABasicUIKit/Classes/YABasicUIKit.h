@@ -12,5 +12,5 @@
 #import "UIView+YAFrame.h"
 #import "UIView+YAGestureRecognizer.h"
 #import "UIView+YACorner.h"
-
+#import "UIFont+YAFontType.h"
 #endif /* YABasicUIKit_h */

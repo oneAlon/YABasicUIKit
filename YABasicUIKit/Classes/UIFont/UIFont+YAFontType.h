@@ -1,15 +1,15 @@
 //
-//  UIFont+YAType.h
+//  UIFont+YAFontType.h
 //  YABasicUIKit
 //
-//  Created by 李亚飞 on 2018/10/11.
+//  Created by 李亚飞 on 2018/11/23.
 //
 
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIFont (YAType)
+@interface UIFont (YAFontType)
 /**
  细体
  
@@ -42,7 +42,6 @@ NS_ASSUME_NONNULL_BEGIN
  @param fontSize 文字字号
  */
 + (UIFont *)ya_PingFangSCRegularOfSize:(CGFloat)fontSize;
-
 @end
 
 NS_ASSUME_NONNULL_END

@@ -261,7 +261,7 @@
 				ORGANIZATIONNAME = OneAlon;
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
-						DevelopmentTeam = 242UJJD8JW;
+						DevelopmentTeam = 7HU4HSHUVT;
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -548,7 +548,7 @@
 			baseConfigurationReference = 51928ADBC25D250194E43EF6 /* Pods-YABasicUIKit_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 242UJJD8JW;
+				DEVELOPMENT_TEAM = 7HU4HSHUVT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YABasicUIKit/YABasicUIKit-Prefix.pch";
 				INFOPLIST_FILE = "YABasicUIKit/YABasicUIKit-Info.plist";
@@ -564,7 +564,7 @@
 			baseConfigurationReference = 0068BD550291A1BE565E5CA5 /* Pods-YABasicUIKit_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 242UJJD8JW;
+				DEVELOPMENT_TEAM = 7HU4HSHUVT;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YABasicUIKit/YABasicUIKit-Prefix.pch";
 				INFOPLIST_FILE = "YABasicUIKit/YABasicUIKit-Info.plist";

@@ -1,13 +1,14 @@
 //
-//  UIFont+YAType.m
+//  UIFont+YAFontType.m
 //  YABasicUIKit
 //
-//  Created by 李亚飞 on 2018/10/11.
+//  Created by 李亚飞 on 2018/11/23.
 //
 
-#import "UIFont+YAType.h"
+#import "UIFont+YAFontType.h"
 
-@implementation UIFont (YAType)
+@implementation UIFont (YAFontType)
+
 /**
  细体
  
@@ -53,7 +54,5 @@
 {
     return [UIFont fontWithName:@"PingFangSC-Regular" size:fontSize];
 }
-
-
 
 @end

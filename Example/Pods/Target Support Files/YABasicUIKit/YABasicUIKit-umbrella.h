@@ -10,10 +10,12 @@
 #endif
 #endif
 
+#import "UIFont+YAFontType.h"
 #import "UIView+YACorner.h"
 #import "UIView+YAFrame.h"
 #import "UIView+YAGestureRecognizer.h"
 #import "YABasicUIKit.h"
+
 
 FOUNDATION_EXPORT double YABasicUIKitVersionNumber;
 FOUNDATION_EXPORT const unsigned char YABasicUIKitVersionString[];
