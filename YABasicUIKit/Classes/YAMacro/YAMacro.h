@@ -28,6 +28,20 @@
 
 
 
+
+
+
+// DEBUG日志
+#ifdef DEBUG
+#define YALog(s,...) NSLog(@"<%p %@:(%d)>\n  %s\n  %@\n\n", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __func__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+#else
+#define YALog(s,...)
+#endif
+
+
+/* ===============  设置图片  =============== */
+#define kYAImage(name)                     [UIImage imageNamed:name]
+
 /* ===============  引用  =============== */
 #define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
 

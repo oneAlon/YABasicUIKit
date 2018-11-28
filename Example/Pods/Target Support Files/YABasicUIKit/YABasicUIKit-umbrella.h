@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIColor+YAColor.h"
 #import "UIFont+YAFontType.h"
 #import "UIImage+YACreate.h"
 #import "UIImage+YARotate.h"
