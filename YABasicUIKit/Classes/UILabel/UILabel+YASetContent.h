@@ -10,6 +10,30 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UILabel (YASetContent)
+
+/**
+ 返回对应alignment的label 默认label使用autoLayout
+ 
+ */
++ (instancetype)ya_labelWithTextAlignment:(NSTextAlignment)alignment;
+
+/**
+ 快速实例化一个UILabel
+ 
+ @param font    字体大小
+ @param bColor  背景色
+ @param tColor  字体颜色
+ @param alignment 文本排列
+ @param isWarp  是否换行
+ @return        UIlabel
+ */
++ (instancetype)ya_labelWithFont:(UIFont *)font
+                 backGroundColor:(UIColor *)bColor
+                       textColor:(UIColor *)tColor
+                   textAlignment:(NSTextAlignment)alignment
+                          isWarp:(BOOL)isWarp;
+
+
 /**
  设置label内容不同颜色
  
@@ -25,26 +49,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  自定义label行间距
- 
- @param label 需要改变的行间距的Label
+
  @param lineSpace 行间距
  */
 - (void)ya_changeLineSpaceWith:(float)lineSpace;
 /**
  自定义label字间距
  
- @param label 需要改变的字间距的Label
  @param wordSpace 字间距
  */
 - (void)ya_changeWordSpaceWith:(float)wordSpace;
 /**
  自定义label字间距
  
- @param label 需要改变的字间距的Label
  @param lineSpace 行间距
  @param wordSpace 字间距
  */
 - (void)ya_changeSpacelineSpaceWith:(float)lineSpace wordSpaceWith:(float)wordSpace;
+
+
+
+
 
 
 

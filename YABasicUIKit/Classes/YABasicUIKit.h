@@ -26,4 +26,14 @@
 #pragma mark - UIColor
 #import "UIColor+YAColor.h"
 
+#pragma mark - UILabel
+#import "UILabel+YASetContent.h"
+
+
+#pragma mark - UITextField
+#import "UITextField+YaSetContent.h"
+
+#pragma mark - UIButton
+#import "UIButton+YaSetContent.h"
+
 #endif /* YABasicUIKit_h */

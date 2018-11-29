@@ -16,6 +16,10 @@
 		28AC47AC0521B377F1578D8ED9EAAF4F /* UIFont+YAFontType.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BC59BE44CDE99C8257864B3A534C1A /* UIFont+YAFontType.m */; };
 		2A6FC6A690AD6AE7765F746C215C52F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
 		30091A897A761D535FFABEBBC7393736 /* UIView+YAFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F02288BACBA4F98667EC2D019668A /* UIView+YAFrame.m */; };
+		303D61CF21AFE751008B86A2 /* UITextField+YaSetContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 303D61CD21AFE751008B86A2 /* UITextField+YaSetContent.h */; };
+		303D61D021AFE751008B86A2 /* UITextField+YaSetContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 303D61CE21AFE751008B86A2 /* UITextField+YaSetContent.m */; };
+		307311A221AFE90E00D92183 /* UIButton+YASetContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 307311A021AFE90E00D92183 /* UIButton+YASetContent.h */; };
+		307311A321AFE90E00D92183 /* UIButton+YASetContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 307311A121AFE90E00D92183 /* UIButton+YASetContent.m */; };
 		307A526D21A7FF4C0049EBA1 /* UILabel+YASetContent.h in Headers */ = {isa = PBXBuildFile; fileRef = 307A526B21A7FF4C0049EBA1 /* UILabel+YASetContent.h */; };
 		307A526E21A7FF4C0049EBA1 /* UILabel+YASetContent.m in Sources */ = {isa = PBXBuildFile; fileRef = 307A526C21A7FF4C0049EBA1 /* UILabel+YASetContent.m */; };
 		331D4BF1DEE091CE59527329E3D17D32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
@@ -67,6 +71,10 @@
 		19B077B1E9728935E63F1B4EABB554FE /* YABasicUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = YABasicUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1C8E765486F697BD2B6D76512CAF904B /* YACommonMethods.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YACommonMethods.h; sourceTree = "<group>"; };
 		1F67CD9603946AAAA2A566F65B34E638 /* UIImage+YARotate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YARotate.m"; sourceTree = "<group>"; };
+		303D61CD21AFE751008B86A2 /* UITextField+YaSetContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+YaSetContent.h"; sourceTree = "<group>"; };
+		303D61CE21AFE751008B86A2 /* UITextField+YaSetContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+YaSetContent.m"; sourceTree = "<group>"; };
+		307311A021AFE90E00D92183 /* UIButton+YASetContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+YASetContent.h"; sourceTree = "<group>"; };
+		307311A121AFE90E00D92183 /* UIButton+YASetContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+YASetContent.m"; sourceTree = "<group>"; };
 		307A526B21A7FF4C0049EBA1 /* UILabel+YASetContent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+YASetContent.h"; sourceTree = "<group>"; };
 		307A526C21A7FF4C0049EBA1 /* UILabel+YASetContent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+YASetContent.m"; sourceTree = "<group>"; };
 		32014A89C9C13CD8C4340247781841EF /* UIFont+YAFontType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIFont+YAFontType.h"; sourceTree = "<group>"; };
@@ -191,6 +199,26 @@
 			path = "Target Support Files/Pods-YABasicUIKit_Example";
 			sourceTree = "<group>";
 		};
+		303D61C821AFE6CA008B86A2 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				303D61CD21AFE751008B86A2 /* UITextField+YaSetContent.h */,
+				303D61CE21AFE751008B86A2 /* UITextField+YaSetContent.m */,
+			);
+			name = UITextField;
+			path = YABasicUIKit/Classes/UITextField;
+			sourceTree = "<group>";
+		};
+		3073119F21AFE8ED00D92183 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				307311A021AFE90E00D92183 /* UIButton+YASetContent.h */,
+				307311A121AFE90E00D92183 /* UIButton+YASetContent.m */,
+			);
+			name = UIButton;
+			path = YABasicUIKit/Classes/UIButton;
+			sourceTree = "<group>";
+		};
 		307A526221A7F9A60049EBA1 /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +314,8 @@
 				64EA1F1935279C92CBCF2BBDE8BE7A75 /* YABasicUIKit.h */,
 				1DE89B80FC2B88DD791958A18135B34E /* Pod */,
 				14D8160A6215890F7F5FDE6DF197C12A /* Support Files */,
+				3073119F21AFE8ED00D92183 /* UIButton */,
+				303D61C821AFE6CA008B86A2 /* UITextField */,
 				307A526221A7F9A60049EBA1 /* UILabel */,
 				4CBA2864E5E23AD83085A47335B71A4F /* UIColor */,
 				B64C0D4C112827932D4B4EB659231B84 /* UIFont */,
@@ -377,8 +407,10 @@
 				9BA761AEF0CE722A4E6319D126C4ECA7 /* UIView+YACorner.h in Headers */,
 				FC536567C51B293230859514F57F1249 /* UIView+YAFrame.h in Headers */,
 				307A526D21A7FF4C0049EBA1 /* UILabel+YASetContent.h in Headers */,
+				307311A221AFE90E00D92183 /* UIButton+YASetContent.h in Headers */,
 				177A50DADDF101702D48162BC94D78DD /* UIView+YAGestureRecognizer.h in Headers */,
 				5E70BA7C187EDB27A85C6CB206892DE7 /* YABasicUIKit-umbrella.h in Headers */,
+				303D61CF21AFE751008B86A2 /* UITextField+YaSetContent.h in Headers */,
 				62619927E22B6C73EB8B2DE2C2AFB928 /* YABasicUIKit.h in Headers */,
 				2161E1FAB4BB5B74570C89D35AABC877 /* YACommonMethods.h in Headers */,
 				3854785D30BD9EC7195E9A9CCA26282B /* YAMacro.h in Headers */,
@@ -487,8 +519,10 @@
 				BC014F554A2CD8F410AFE6C889743F5F /* UIImage+YACreate.m in Sources */,
 				6523A907E13F6C448F0CB13B00D6D7FF /* UIImage+YARotate.m in Sources */,
 				46076817DE5B4C4DC478B7F98A847779 /* UIView+YACorner.m in Sources */,
+				303D61D021AFE751008B86A2 /* UITextField+YaSetContent.m in Sources */,
 				30091A897A761D535FFABEBBC7393736 /* UIView+YAFrame.m in Sources */,
 				88F15450881176347F237CEFABE6B236 /* UIView+YAGestureRecognizer.m in Sources */,
+				307311A321AFE90E00D92183 /* UIButton+YASetContent.m in Sources */,
 				0DA481B535298E63160664D07D2A3890 /* YABasicUIKit-dummy.m in Sources */,
 				EB42EA7DC3187EF7A9AC435BCFDAD908 /* YACommonMethods.m in Sources */,
 				307A526E21A7FF4C0049EBA1 /* UILabel+YASetContent.m in Sources */,

@@ -34,6 +34,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (UIColor *)ya_randomColor;
 
 
+/**
+  UIColor 转 UIImage
+ 
+ */
++ (UIImage *)ya_imageWithColor:(UIColor *)color;
+
 
 
 @end

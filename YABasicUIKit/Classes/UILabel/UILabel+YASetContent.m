@@ -8,6 +8,35 @@
 #import "UILabel+YASetContent.h"
 
 @implementation UILabel (YASetContent)
+
++ (instancetype)ya_labelWithTextAlignment:(NSTextAlignment)alignment
+{
+    UILabel *label = [[self alloc] init];
+    label.backgroundColor = [UIColor clearColor];
+    label.textAlignment = alignment;
+    
+    return label;
+}
++ (instancetype)ya_labelWithFont:(UIFont *)font
+                 backGroundColor:(UIColor *)bColor
+                       textColor:(UIColor *)tColor
+                   textAlignment:(NSTextAlignment)alignment
+                          isWarp:(BOOL)isWarp
+{
+    UILabel *label = [self ya_labelWithTextAlignment:alignment];
+    label.font = font;
+    label.backgroundColor = bColor;
+    label.textColor = tColor;
+    label.numberOfLines = isWarp ? 0 : 1;
+    [label sizeToFit];
+    return label;
+}
+
+
+
+
+
+
 - (void)ya_setLabelTextColorWithAllString:(NSString *)allString
                            colorString:(NSString *)colorString
                                  color:(UIColor *)color
@@ -71,4 +100,9 @@
     [self sizeToFit];
     
 }
+
+
+
+
+
 @end
