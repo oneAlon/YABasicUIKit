@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YABasicUIKit/Classes/**/*"
+  "source_files": "YABasicUIKit/Classes/**/*",
+  "dependencies": {
+    "PureLayout": [
+
+    ]
+  }
 }

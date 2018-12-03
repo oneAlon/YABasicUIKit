@@ -128,6 +128,10 @@ typedef enum  {
 + (UIImage *)ya_getImageByColors:(NSArray <UIColor *> *)colorsArray andGradientType:(YAGradientType)gradientType andImageSize:(CGSize)size;
 
 
+
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END

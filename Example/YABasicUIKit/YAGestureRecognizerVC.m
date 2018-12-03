@@ -20,6 +20,7 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self.view ya_whenSingleTapped:^(UIGestureRecognizer *gestureRecognizer) {
         NSLog(@"单击");
+        
     }];
     
     [self.view ya_whenDoubleTapped:^(UIGestureRecognizer *gestureRecognizer) {

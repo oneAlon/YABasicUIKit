@@ -1,16 +1,23 @@
 PODS:
-  - YABasicUIKit (0.1.3)
+  - PureLayout (3.1.2)
+  - YABasicUIKit (0.1.3):
+    - PureLayout
 
 DEPENDENCIES:
   - YABasicUIKit (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PureLayout
 
 EXTERNAL SOURCES:
   YABasicUIKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YABasicUIKit: 3360e43804312365e71c3428dde942196080dcd7
+  PureLayout: 4634d0b61e3b5021166e8ec7c18e9e0ca0720c8b
+  YABasicUIKit: 0fa87ae1850c39e30c4aacb45c32d865c11922f7
 
-PODFILE CHECKSUM: 20ada69181daa6bac0055a42fa49825828509313
+PODFILE CHECKSUM: 474e1d13636903a9efe9372551f334321808cc11
 
 COCOAPODS: 1.5.3

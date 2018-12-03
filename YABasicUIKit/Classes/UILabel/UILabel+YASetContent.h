@@ -49,24 +49,27 @@ NS_ASSUME_NONNULL_BEGIN
 
 /**
  自定义label行间距
-
+ 
+ @param label     需要设置的Label
  @param lineSpace 行间距
  */
-- (void)ya_changeLineSpaceWith:(float)lineSpace;
++ (void)ya_changeLineSpaceForLabel:(UILabel *)label lineSpace:(float)lineSpace;
+
 /**
  自定义label字间距
  
+ @param label     需要设置的Label
  @param wordSpace 字间距
  */
-- (void)ya_changeWordSpaceWith:(float)wordSpace;
++ (void)ya_changeWordSpaceForLabel:(UILabel *)label wordSpace:(float)wordSpace;
 /**
  自定义label字间距
  
+ @param label     需要设置的Label
  @param lineSpace 行间距
  @param wordSpace 字间距
  */
-- (void)ya_changeSpacelineSpaceWith:(float)lineSpace wordSpaceWith:(float)wordSpace;
-
++ (void)ya_changeSpaceForLabel:(UILabel *)label lineSpace:(float)lineSpace wordSpace:(float)wordSpace;
 
 
 

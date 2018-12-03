@@ -10,26 +10,48 @@
 
 
 /* ===============  Window  =============== */
-#define YAKeyWindow [UIApplication sharedApplication].keyWindow
+#define kYAKeyWindow [UIApplication sharedApplication].keyWindow
 
 
 /* ===============  Screen  =============== */
-#define YAScreenBounds [UIScreen mainScreen].bounds
-#define YAScreenSize YAScreenBounds.size
-#define YAScreenWidth YAScreenSize.width
-#define YAScreenHeight YAScreenSize.height
+
+// System Size
+#define kYAScreenBounds                    ([UIScreen mainScreen].bounds)
+#define kYAScreenWidth                     ([UIScreen mainScreen].bounds.size.width)
+#define kYAScreenHeight                    ([UIScreen mainScreen].bounds.size.height)
+#define kYAScreenScale                     ([UIScreen mainScreen].scale)
+#define kYASingleLineHeight                (1.f / [UIScreen mainScreen].scale)
+#define kYAStatusBarHeight                 [UIApplication sharedApplication].statusBarFrame.size.height
+#define kYANavigationBarHeight             (44.f)
+#define kYATabBarHeight                    (kYAScreenIsIPhoneX ? 83.f : 49.f)
+#define kYANavigationAndStatusBarHeight    (kYAStatusBarHeight + kYANavigationBarHeight)
+#define kYATableViewBottomButtonHeight     (56.f)
+#define kYAScreenRealWidth                 kYAScreenWidth * kYAScreenScale
+#define kYAScreenRealHeight                kYAScreenHeight * kYAScreenScale
+#define kYAScreenAutoLayoutScale           (kYAScreenWidth / 375)
+#define kYAScreenAutoLayoutScaleCeil(x)    ceilf(kYAScreenAutoLayoutScale*(x))
+
+#define kYAScreenIsIPhoneX                (kYAScreenHeight >= 812.0 ? YES : NO )
+#define kYAScreenSafeBottomHeight          (kYAScreenIsIPhoneX ? 34.f : 0.0)
 
 
-#define YASafeAreaTopHeight (YAScreenHeight >= 812.0 ? 88 : 64)
-#define YASafeAreaBottomHeight (YAScreenHeight >= 812.0 ? 78 : 44)
-#define YASafeAreaHeight (YAScreenHeight - SafeAreaTopHeight - SafeAreaBottomHeight)
-
-#define YASafeBottomHeight (YAScreenHeight >= 812.0 ? 34 : 0)
-
-
+//#define kYASafeAreaTopHeight (kYAScreenHeight >= 812.0 ? 88 : 64)
+//#define kYASafeAreaBottomHeight (kYAScreenHeight >= 812.0 ? 78 : 44)
+//#define kYASafeAreaHeight (kYAScreenHeight - SafeAreaTopHeight - SafeAreaBottomHeight)
+//
+//#define kYASafeBottomHeight (YAScreenHeight >= 812.0 ? 34 : 0)
 
 
 
+
+// 操作系统版本号
+#define kYACurrentSystemVersion            [[UIDevice currentDevice] systemVersion]
+
+#define SYSTEM_VERSION_EQUAL_TO(v)                  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedSame)
+#define SYSTEM_VERSION_GREATER_THAN(v)              ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedDescending)
+#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN(v)                 ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] == NSOrderedAscending)
+#define SYSTEM_VERSION_LESS_THAN_OR_EQUAL_TO(v)     ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedDescending)
 
 // DEBUG日志
 #ifdef DEBUG

@@ -34,6 +34,26 @@
 #import "UITextField+YaSetContent.h"
 
 #pragma mark - UIButton
-#import "UIButton+YaSetContent.h"
+#import "UIButton+YASetContent.h"
+
+#pragma mark - UIActionSheet
+#import "YAActionSheet.h"
+
+#pragma mark - YABottomPromptView
+#import "YABottomPromptView.h"
+
+#pragma mark - YAAlertView
+#import "YAAlertView.h"
+#import "YAAlertAction.h"
+#import "YAAlertViewAlertViewOne.h"
+
+#pragma mark - YAIconFontInfo
+#import "YAIconFontInfo.h"
+#import "UIImage+YaIconFont.h"
+
+
+#pragma mark - YAIconFontInfo
+#import "UIScrollView+YASetContent.h"
+
 
 #endif /* YABasicUIKit_h */
